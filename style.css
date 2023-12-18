@@ -26,9 +26,10 @@ nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+    color: #fff;
 }
 nav ul li a{
-    color: #fff;
+    color: #ffffff;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -57,6 +58,34 @@ section{
     height: calc(100vh - 80px);
 }
 
+.switch{
+    width: 60px;
+    height: 30px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 100px;
+    border: #333 solid 2px;
+    background-color: #051a2e;
+}
+.switch i {
+    font-size:1rem;
+    color: #fdc21c;
+    
+}
+
+.menu li:last-child::before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid thin #000
+}
+
 @media (max-width: 952px){
     .enlace{
         padding-left: 20px;
@@ -74,7 +103,7 @@ section{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #002c55;
+        background: #051a2e;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -90,7 +119,7 @@ section{
     }
     li a:hover, li a.active{
         background: none;
-        color: rgb(53, 0, 0);
+        color: rgb(255, 255, 255);
     }
     #check:checked ~ ul{
         left:0;
