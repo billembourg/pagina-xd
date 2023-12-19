@@ -6,24 +6,81 @@
     box-sizing: border-box;
 }
 
+
+
+button {
+    background-image: linear-gradient(to left, black, brown);
+    border-radius: 20px;
+    border: 0;
+    padding: 10px 25px;
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.emergente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.emergente.close {
+    opacity: 0;
+    z-index: -1;
+}
+
+.emergente-interior {
+    background-color: #131212c0;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.emergente-interior h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.emergente-interior p {
+    margin: 20px 0;
+    line-height: 20px;
+    color: aqua;
+    font-weight: bold;
+    font-size: 30px;
+}
+
 nav{
     background: #051a2e;
     height: 80px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .enlace{
-    position: absolute;
     padding: 20px 50px;
 }
 .logo{
     height: 40px;
 }
 nav ul{
-    float: right;
     margin-right: 20px;
+    display: flex;
+    align-items: center;
 }
 nav ul li{
-    display: inline-block;
     line-height: 80px;
     margin: 0 5px;
     color: #fff;
@@ -59,13 +116,10 @@ section{
 }
 
 .switch{
-    width: 60px;
+    align-items: center;
+    position: absolute;
     height: 30px;
     padding: 0 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
     border-radius: 100px;
     border: #333 solid 2px;
     background-color: #051a2e;
@@ -78,7 +132,6 @@ section{
 
 .menu li:last-child::before{
     content: "";
-    position: absolute;
     height: 25px;
     width: 25px;
     border-radius: 50%;
