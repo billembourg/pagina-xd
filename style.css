@@ -12,6 +12,7 @@ nav{
     height: 80px;
     width: 100%;
     
+    
 }
 .enlace{
     position: absolute;
@@ -84,6 +85,8 @@ cursor: pointer;
     width: 100%;
     position: relative;
     height: 10px;
+    z-index: -1;
+
     
 }
 .slider-img{
@@ -138,11 +141,15 @@ cursor: pointer;
     nav ul li a{
         font-size: 16px;
     }
+    
 }
 
 @media (max-width: 858px){
     .checkbtn{
         display: block;
+    }
+    nav{
+        position: fixed;
     }
     ul{
         position: fixed;
