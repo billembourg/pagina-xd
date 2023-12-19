@@ -6,7 +6,120 @@
     box-sizing: border-box;
     transition: all 1s ease;
 }
+
+
+
+button {
+    background-image: linear-gradient(to left, black, brown);
+    border-radius: 20px;
+    border: 0;
+    padding: 10px 25px;
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.emergente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.emergente.close {
+    opacity: 0;
+    z-index: -1;
+}
+
+.emergente-interior {
+    background-color: #131212c0;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.emergente-interior h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.emergente-interior p {
+    margin: 20px 0;
+    line-height: 20px;
+    color: aqua;
+    font-weight: bold;
+    font-size: 30px;
+}
 /*Menu*/
+
+
+
+button {
+    background-image: linear-gradient(to left, black, brown);
+    border-radius: 20px;
+    border: 0;
+    padding: 10px 25px;
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.emergente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.emergente.close {
+    opacity: 0;
+    z-index: -1;
+}
+
+.emergente-interior {
+    background-color: #131212c0;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.emergente-interior h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.emergente-interior p {
+    margin: 20px 0;
+    line-height: 20px;
+    color: aqua;
+    font-weight: bold;
+    font-size: 30px;
+}
+
 nav{
     background: #051a2e;
     height: 80px;
@@ -15,7 +128,6 @@ nav{
     
 }
 .enlace{
-    position: absolute;
     padding: 20px 50px;
 }
 .logo{
@@ -27,7 +139,6 @@ nav ul{
     
 }
 nav ul li{
-    display: inline-block;
     line-height: 80px;
     margin: 0 5px;
     color: #fff;
